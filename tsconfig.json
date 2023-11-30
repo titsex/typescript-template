@@ -11,6 +11,7 @@
         "outDir": "./build",
         "baseUrl": "./src",
         "paths": {
+            "@class/*": ["classes/*"],
             "@utils": ["utils"]
         }
     },
