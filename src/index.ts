@@ -1,4 +1,4 @@
-import Logger from 'classes/Logger'
+import Logger from '@class/Logger'
 
 import { sayHelloWorld, someError } from '@utils'
 
