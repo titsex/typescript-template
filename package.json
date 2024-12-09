@@ -14,9 +14,9 @@
         "dev": "pnpm type:check && tsx watch --env-file=.env ./src/index.ts"
     },
     "devDependencies": {
-        "@biomejs/biome": "^1.7.3",
-        "@types/node": "^20.12.11",
-        "tsx": "^4.9.4",
-        "typescript": "^5.4.5"
+        "@biomejs/biome": "^1.9.4",
+        "@types/node": "^22.10.1",
+        "tsx": "^4.19.2",
+        "typescript": "^5.7.2"
     }
 }
