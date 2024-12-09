@@ -1,22 +1,22 @@
 {
-    "name": "project-name",
-    "description": "project-description",
-    "version": "0.0.1",
-    "main": "build/index.js",
-    "author": "titsex",
-    "license": "MIT",
-    "type": "module",
-    "scripts": {
-        "format": "biome format ./src",
-        "lint": "biome lint ./src",
-        "type:check": "tsc --project ./tsconfig.json",
-        "start": "pnpm type:check && tsx --env-file=.env ./src/index.ts",
-        "dev": "pnpm type:check && tsx watch --env-file=.env ./src/index.ts"
-    },
-    "devDependencies": {
-        "@biomejs/biome": "^1.9.4",
-        "@types/node": "^22.10.1",
-        "tsx": "^4.19.2",
-        "typescript": "^5.7.2"
-    }
+	"name": "project-name",
+	"description": "project-description",
+	"version": "0.0.1",
+	"author": "titsex",
+	"license": "MIT",
+	"type": "module",
+	"packageManager": "pnpm@9.14.2",
+	"scripts": {
+		"format": "biome format ./src --write",
+		"lint": "biome lint ./src --write",
+		"type:check": "tsc --project ./tsconfig.json",
+		"start": "pnpm type:check && tsx --env-file=.env ./src/index.ts",
+		"dev": "pnpm type:check && tsx watch --env-file=.env ./src/index.ts"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/node": "^22.10.1",
+		"tsx": "^4.19.2",
+		"typescript": "^5.7.2"
+	}
 }

@@ -1,0 +1,5 @@
+services:
+  typescript-template:
+    build:
+      context: .
+      dockerfile: Dockerfile
