@@ -1,7 +1,8 @@
 import Logger from '@class/Logger'
 
-async function sayHelloWorld() {
-	Logger.info(process.env.HELLO_WORLD)
-}
-
-await sayHelloWorld()
+await new Promise<void>((resolve) => {
+	setTimeout(() => {
+		Logger.info(process.env.HELLO_WORLD as string)
+		resolve()
+	}, 2311)
+})
